@@ -7,6 +7,6 @@ js: /assets/scripts/snow.js
 onload: letItSnow()
 onresize: fixCanvas()
 ---
-<canvas id="snow"></canvas>
-
 # SnowEffectJS
+
+<canvas id="snow"></canvas>
