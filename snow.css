@@ -1,5 +1,16 @@
+:root {
+	color-scheme: light dark;
+	--background: #78909c;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root{
+		--background: #2b3856;
+	}
+}
+
 body {
-	background-color: #78909c;
+	background-color: var(--background);
 }
 
 #snow {
