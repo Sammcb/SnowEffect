@@ -12,7 +12,7 @@ function letItSnow() {
 	c.width = c.offsetWidth * scale
 	c.height = c.offsetHeight * scale
 	ctx.scale(scale, scale)
-	ctx.fillStyle = 'rgba(255, 255, 255, 1)'
+	ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
 	setInterval(snow, 50, c, ctx)
 }
 
@@ -46,5 +46,5 @@ function fixCanvas() {
 	c.width = c.offsetWidth * scale
 	c.height = c.offsetHeight * scale
 	ctx.scale(scale, scale)
-	ctx.fillStyle = 'rgba(255, 255, 255, 1)'
+	ctx.fillStyle = 'rgba(255, 255, 255, 0.75)'
 }
