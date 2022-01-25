@@ -1,7 +1,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./snow.css">
 <script src="./snow.js"></script>
 <title>SnowEffect</title>
+<style>
+	:root {
+		color-scheme: light dark;
+		--background: #78909c;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root{
+			--background: #2b3856;
+		}
+	}
+
+	body {
+		background-color: var(--background);
+	}
+</style>
 <body onresize="fixCanvas()" onload="letItSnow()">
-	<canvas id="snow"></canvas>
+	<canvas id="snow" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; bottom: 0; right: 0; pointer-events: none;"></canvas>
 </body>
